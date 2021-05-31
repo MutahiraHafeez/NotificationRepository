@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
                 NotificationCompat.Builder builder = new NotificationCompat.Builder(MainActivity.this,"My Notification");
                 builder.setContentTitle("New Notification");
-                builder.setContentText("Hello from Mutahira, Doing practice with Notification in Android Studio, Nice to meet you.");
+                builder.setContentText("Hello from Mutahira, Doing practice with Notification in Android Studio.");
                 builder.setSmallIcon(R.drawable.ic_launcher_background);
                 builder.setAutoCancel(true);
 
