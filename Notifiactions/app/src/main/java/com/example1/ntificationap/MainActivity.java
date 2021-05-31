@@ -2,6 +2,7 @@ package com.example1.ntificationap;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import android.app.Notification;
 import android.os.Bundle;
@@ -25,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
                 NotificationCompat.Builder builder = new NotificationCompat.Builder(MainActivity.this,"My Notification");
                 builder.setContentTitle("New Notification");
                 builder.setContentText("Hello from Mutahira, Doing practice with Notification in Android Studio");
+                builder.setSmallIcon(R.drawable.ic_launcher_background);
+                builder.setAutoCancel(true);
+
+                NotificationManagerCompat managerCompat=NotificationManagerCompat.from(MainActivity.this);
+                managerCompat.notify(1,builder.build());
             }
         });
     }
